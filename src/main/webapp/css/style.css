@@ -1,0 +1,453 @@
+:root{
+	--rouge:rgb(243,112,41);
+	--vert:rgb(26,203,149);
+	--maron:#774537;
+	--black:#2C3331;
+	--vert-fonce:#366658;
+	--gray:#4D4530;
+}
+*{
+	box-sizing: border-box;
+	font-family: 'Merriweather';
+}
+a{
+	text-decoration: none;
+	
+}
+body{
+	margin:0 10rem;
+
+}
+nav h1{
+	font-size: 30px;
+}
+.Logo{
+	color: var(--vert);
+	
+}
+.Logo span{
+	color: var(--vert);
+}
+
+.btn{
+	padding: 0.5rem 2rem;
+	color:white;
+	display: inline-block;
+	background-color: var(--vert);
+	border-radius: 10px;
+}
+
+.link{
+	text-decoration: underline;
+	color: var(--maron);
+	font-size: 20px;
+	
+}
+.link:hover{
+	color: var(--rouge);
+	
+}
+nav,
+nav ul{
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+nav ul{
+	gap: 2rem;
+	align-items: center;
+}
+nav ul li{
+	list-style: none;
+	
+}
+
+.card-container,
+.product-container{
+	margin-top: 8rem;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	margin-bottom: 8rem;
+}
+.product-container{
+	grid-template-columns: repeat(3,1fr);
+}
+.product-card{
+	padding: 0;
+	margin:0;
+}
+.product-card img{
+	width: 100%;
+	height: 200px;
+}
+
+.price{
+	margin-top: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price button svg{
+	width: 50px;
+	
+	
+}
+.price p{
+	font-size: 20px;
+	font-weight: 700;
+	margin:0
+
+}
+
+.price button{
+	border-radius: 50%;
+	background-color: var(--rouge);
+	color: var(--rouge);
+	border-color:var(--rouge) ;
+}
+
+.price span{
+	font-size: 30px;
+}
+.card-container img{
+	max-width: 800px;
+	max-height: 100px;
+}
+.cta{
+	text-align: center;
+	margin-top: 10rem;
+}
+
+.cta p{
+	margin:0 10rem;
+	font-size: 18px;
+}
+.card{
+	border: 1px solid var(--maron);
+	border-radius: 20px;
+	padding: 2rem ;
+}
+.card-details{
+	margin-top: 4rem;
+}
+.card-details .title{
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--vert);
+}
+.card-details .number{
+	font-size: 25px
+	}
+.card-details span{
+	display: block;
+	
+}
+.card-details .btn{
+	border-color: var(--vert);
+	margin-top: 1em;
+}
+.cart-number{
+	position: absolute;
+	background-color: var(--rouge);
+	color: white;
+	border-radius: 50%;
+	padding: 0 2px;
+	text-align: center;
+	font-weight: 700;
+	width: 20px;
+	height: 20px;
+	right: 9.5rem;
+	top:1em;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 0;
+  margin:0;
+  list-style: outside;
+  font-size: 18px;
+  margin-top: 4rem;
+}
+
+
+.summary-card{
+	display: flex;
+	margin-bottom: 2rem;
+	
+}
+.summary-card img{
+	width:200px;
+	height: 200px;
+}
+.summary-card ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.pannier table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.pannier{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem; 
+	margin-bottom:  8rem;
+	
+}
+.pannier th, .pannier td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.pannier .qte,
+.pannier .delete{
+	cursor: pointer;
+	margin: 0.5em;
+	
+}
+.qte:last-child{
+	margin-right: 0;
+}
+span.data{
+	margin-left: 4rem;
+	font-size: 18px;
+	font-weight: 700;
+	float: right;
+}
+
+.summary-card ul li{
+	border-bottom: 1px dashed gray;
+	
+}
+.summary-card li.delete{
+	margin-top: 1em;
+	border-bottom: none;
+}
+li a.delete{
+	border-bottom: none;
+	color: red;
+	font-size: 20px;
+	
+}
+
+.summary-card button{
+	background-color: var(--vert);
+	color: white;
+	border: none;
+}
+/* form styling*/
+
+.command-details{ 
+
+}
+
+.command-details h1{
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	color: var(--maron);
+}
+.command-details form div{
+	 margin-bottom: 1em;	
+}
+.command-details  .enregistrer{
+	margin-top:2rem;
+	background-color: var(--maron);
+	border-color: var(--maron);
+}
+.command-details form label{
+	display: block;
+	text-transform: uppercase; 
+	font-size: 18px;
+	margin-bottom: 0.5em;
+
+}
+
+.command-details form  input,
+select{
+	width: 100%;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 0.25em;
+	border: 1px solid var(--vert);
+
+}
+
+form input:focus,
+select:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--vert);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+/* admin navigation styles */
+.admin-nav ul{
+	/*border: 1px solid var(--gray);*/
+	/*background-color: var(--black);*/
+	width: 120%;
+	padding: 0;
+	border-radius: 10px;
+	
+	
+}
+
+.admin-nav ul li{
+	list-style-type: none;
+	padding: 1em;
+	
+	border-bottom: 1px solid var(--black);
+}
+
+.admin-nav ul li:hover,
+.admin-nav ul li:hover > a:not(.active){
+	background-color: var(--black);
+	color: white;
+}
+.admin-nav a:hover{
+	color: white;
+}
+.admin-nav a.active{
+	color: white;
+	
+}
+.admin-nav li.active{
+	background-color: var(--maron);
+}
+.admin-nav a{
+	text-decoration: none;
+	color: var(--black);
+	/*background-color: black;*/
+	font-size: 1.25em;
+	text-transform: uppercase;
+	
+}
+
+.admin-section{
+	display: flex;
+	gap: 5em;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+	
+}
+
+section.admin-product{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-content: space-between;
+	gap: 2em;
+	margin-top: 1em;
+}
+section.admin-product .product-card{
+	border: 1px solid var(--black);
+	border-radius: 5px;
+}
+section.admin-product img{
+	width: 100%;
+	height: 150px;
+}
+section.admin-section .price,
+section.admin-section .btns{
+	margin: 1em;
+}
+section.admin-section .price span{
+	font-size: 18px;
+}
+
+section.admin-section .btns{
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+	margin-top: 2em;
+}
+
+section.admin-section .btns .delete{
+	background-color:red;
+}
+
+
+section.admin-section .btns .modify{
+	background-color:var(--vert)
+}
+
+.admin-head{
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	align-items: center;
+	margin: 4rem 0;
+}
+.admin-head ul{
+	margin: 0;
+}
+
+section.admin-section .command-details{
+	width: 70%;
+}
+
+input[type=file]::file-selector-button {
+  border: none;
+  background:var(--vert);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+.fin-commande {
+	border-bottom: 2px solid var(--black);
+	border-top: 2px solid var(--black);
+	margin-top: 2rem;
+}
+
+.fin-commande span{
+	display: block;
+	font-size: 25px;
+}
+
+.fin-commande +button{
+	margin-top: 2rem;
+	border-color: var(--vert);
+	font-size: 16px;
+	
+}
+.fin-commande +button a{
+	color: white;
+}
+
+
